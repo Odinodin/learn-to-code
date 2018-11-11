@@ -1,0 +1,6 @@
+^{:watch-dirs ["src" "dev"]
+  :css-dirs ["resources/public/css"]}
+{:main learn-to-code.dev
+ :output-to "resources/public/js/compiled/app.js"
+ :output-dir "resources/public/js/compiled/out"
+ :post-build-hooks [learntocode.dev/on-js-reload]}
